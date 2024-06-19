@@ -2,10 +2,13 @@
 import React from 'react'
 import{Tabs} from 'expo-router'
 import { Feather } from '@expo/vector-icons';
+import { Colors } from './../../constants/Colors';
 
 export default function TabLayout() {
   return (
-    <Tabs screenOptions={{headerShown:false}}>
+    <Tabs screenOptions={{headerShown:false,
+      tabBarActiveTintColor:Colors.PRIMARY
+    }}>
       <Tabs.Screen name="home"
       options={{
         tabBarLabel: 'Home',
